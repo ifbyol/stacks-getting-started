@@ -1,10 +1,10 @@
 on:
   pull_request:
-    branches:
-      - master
+    types:
+      - closed
 
 jobs:
-  preview:
+  build:
     runs-on: ubuntu-latest
     steps:
     - name: checkout
@@ -15,14 +15,12 @@ jobs:
       with:
         token: ${{ secrets.OKTETO_TOKEN }}
 
-    - name: "Activate namespace"
+    - name: Activate namespace
       uses: okteto/namespace@master
       with:
         namespace: ci-ifbyol
 
-    - name: Deploy Stack
-      uses: okteto/deploy-stack@ifbyol/update-okteto-cli-1-12-9
+    - name: Destroy
+      uses: okteto/destroy-stack@master
       with:
         namespace: ci-ifbyol
-        name: test-vote
-        build: true
