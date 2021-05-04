@@ -21,6 +21,6 @@ jobs:
         namespace: ci-ifbyol
 
     - name: Destroy
-      uses: okteto/destroy-stack@master
+      uses: okteto/destroy-stack@ifbyol/update-okteto-cli-1-12-9
       with:
         namespace: ci-ifbyol
