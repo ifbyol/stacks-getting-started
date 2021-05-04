@@ -20,6 +20,6 @@ jobs:
     - name: Deploy Stack
       uses: okteto/deploy-stack@ifbyol/update-okteto-cli-1-12-9
       with:
-        namespace: ifbyol
+        namespace: ci-ifbyol
         name: test-vote
         build: true
