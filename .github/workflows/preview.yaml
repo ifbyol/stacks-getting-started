@@ -1,0 +1,20 @@
+on: [push]
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout
+      uses: actions/checkout@master
+
+    - name: Login
+      uses: okteto/login@master
+      with:
+        token: ${{ secrets.OKTETO_TOKEN }}
+
+    - name: Deploy Stack
+      uses: okteto/deploy-stack@ifbyol/update-okteto-cli-1-12-9
+      with:
+        namespace: ifbyol
+        name: test-vote
+        build: true
