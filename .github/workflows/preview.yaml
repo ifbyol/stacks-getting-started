@@ -21,7 +21,7 @@ jobs:
         namespace: ci-ifbyol
 
     - name: Deploy Stack
-      uses: okteto/deploy-stack@ifbyol/update-okteto-cli-1-12-9
+      uses: okteto/deploy-stack@ifbyol/update-okteto-cli-1-12-11
       with:
         namespace: ci-ifbyol
         name: test-vote

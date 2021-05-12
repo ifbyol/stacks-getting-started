@@ -21,7 +21,7 @@ jobs:
         namespace: ci-ifbyol
 
     - name: Destroy
-      uses: okteto/destroy-stack@ifbyol/update-okteto-cli-1-12-9
+      uses: okteto/destroy-stack@ifbyol/update-okteto-cli-1-12-11
       with:
         namespace: ci-ifbyol
         name: test-vote
