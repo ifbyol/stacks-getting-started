@@ -1,0 +1,3 @@
+[submodule "my-go-guestbook"]
+	path = my-go-guestbook
+	url = git@github.com:ifbyol/my-go-guestbook.git
