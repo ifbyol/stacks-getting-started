@@ -2,8 +2,8 @@
 	path = my-go-guestbook
 	url = git@github.com:ifbyol/my-go-guestbook.git
 [submodule "movies"]
-        path = movies
-        url = git@github.com:ifbyol/movies.git
+	path = movies
+	url = git@github.com:ifbyol/movies.git
 [submodule "react-getting-started"]
-        path = react-getting-started
-        url = git@github.com:okteto/react-getting-started.git
+	path = react-getting-started
+	url = git@github.com:okteto/react-getting-started.git
