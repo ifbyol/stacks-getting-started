@@ -17,9 +17,6 @@ jobs:
 
     - name: "Activate namespace"
       uses: okteto/namespace@master
-      with:
-        namespace: ci-ifbyol
-
     - name: Deploy Stack
       uses: okteto/deploy-stack@master
       with:
