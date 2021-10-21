@@ -1,14 +1,14 @@
 name: voting-app
 
 services:
-  vote:
+  vote-stack:
     public: true
     build: vote
     replicas: 2
     ports:
       - 8080
 
-  redis:
+  redis-stack:
     image: redis
     ports:
       - 6379
@@ -16,5 +16,5 @@ services:
       - redis:/data
 
 volumes:
-  redis:
+  redis-stack:
     size: 1Gi
