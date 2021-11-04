@@ -9,7 +9,7 @@ import collections
 
 hostname = socket.gethostname()
 
-redis = Redis(host="redis", db=0)
+redis = Redis(host="redis-stack", db=0)
 app = Flask(__name__)
 
 def getOptions():
