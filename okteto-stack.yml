@@ -7,7 +7,7 @@ services:
     build: vote
     replicas: 2
     ports:
-      - 8080
+      - 8080:8080
 
   redis-stack:
     image: redis
