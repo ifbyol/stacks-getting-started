@@ -4,6 +4,7 @@ services:
   vote-stack:
     labels:
       dev.okteto.com/private: "true"
+    public: true
     build: vote
     replicas: 2
     ports:
