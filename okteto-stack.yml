@@ -2,7 +2,8 @@ name: voting-app
 
 services:
   vote-stack:
-    public: true
+    labels:
+      dev.okteto.com/private: "true"
     build: vote
     replicas: 2
     ports:
